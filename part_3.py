@@ -9,9 +9,15 @@ def get_coordinate():
     while True:
         try:
             X = int(input("Enter the x coordinate: "))
-            return X
+            if X > 100 or X < -100:
+                print("Coordinate out of range")
+            else:
+                return X
         except:
             print("Invalid coordinate")
+
+        
+
 
 def main():
     speed()
