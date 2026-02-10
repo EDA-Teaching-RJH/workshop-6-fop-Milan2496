@@ -13,3 +13,6 @@ while True:
     except:
         print("Sensor Glitch")
 
+print("Mission Terminated.")
+print(f"Total steps taken: {len(travel_log)}")
+print(travel_log)
