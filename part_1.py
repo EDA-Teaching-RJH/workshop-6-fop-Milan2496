@@ -21,3 +21,14 @@ print("New Findings:")
 
 for i in range(len(new_findings)):   
     print(f"{new_findings[i]}")
+
+for x in range(len(sample_bay)):
+    if sample_bay[x] == ("Dust"):
+        print("Rock: 'Dust' is in list")
+        idx = sample_bay.index("Dust")
+        sample_bay.pop(idx)
+        print("Rock: 'Dust' removed from list")
+        print("Cleaned list:")
+        for sample_name in range(len(sample_bay)):
+            print(f"{sample_bay[sample_name]}")
+
