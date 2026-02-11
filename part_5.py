@@ -8,21 +8,22 @@ status = {
 inventory = []
 
 while  True:
-    print("-------MENU-------")
+    print("\n-------MENU-------")
     print("1.Dig for sample")
     print("2.Report Status")
     print("3.Emergency Stop")
 
-    option = int(input("Enter an option"))
+    option = int(input("Enter an option: "))
 
     if option == 1:
-        name = input("Enter a sample name")
+        name = input("Enter a sample name: ")
         inventory.append(name)
-        status("power") == status("power") - 10
+        (status["Power"]) = (status["Power"]) - 10
     elif option == 2:
         print(inventory)
         print(status)
     elif option == 3:
+        print("EMERGENCY STOP")
         break
     else:
         print("Invalid option")
